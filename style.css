@@ -1,0 +1,118 @@
+* {
+  /* border: 1px solid red; */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #181818;
+  color: #ec6796;
+}
+
+.imgsUserDiv,
+.imgsComputerDiv,
+.userScoreDiv,
+.computerScoreDiv {
+  background-color: #4a3747;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.gameSection .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circlesDiv {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
+
+.userDiv,
+.computerDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.finalSection .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.playersScoresDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.imgsUserDiv,
+.imgsComputerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgsUserDiv:hover,
+.imgsComputerDiv:hover {
+  background-color: #b3aa99;
+}
+
+body > section.finalSection > div > div > p {
+  text-align: center;
+}
+
+.userScoreDiv,
+.computerScoreDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextButton {
+  margin-top: 10px;
+  outline: 0;
+  cursor: pointer;
+  border: 1px solid #ec6796;
+  border-radius: 10px;
+  color: #ec6796;
+  padding: 6px;
+  background: #181818;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nextButton:hover {
+  background: #b3aa99;
+}
